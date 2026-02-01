@@ -28,34 +28,8 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <h1>Community Events</h1>
-      
-      {loading && <p className="loading">Loading events...</p>}
-      {error && <p className="error">Error: {error}</p>}
-      
-      {!loading && announcements.length === 0 && (
-        <p className="no-events">No events available</p>
-      )}
-
-      <div className="events-grid">
-        {announcements.map((announcement) => (
-          <div key={announcement.id} className="event-card">
-            <h3 className="event-title">{announcement.title}</h3>
-            <p className="event-description">{announcement.message}</p>
-            <p className="event-date">
-              {new Date(announcement.createdAt).toLocaleDateString()}
-            </p>
-            <button 
-              className="event-button"
-              onClick={() => handleAction(announcement.id)}
-            >
-              Learn More
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
+  //  Your UI here
+   
   )
 }
 

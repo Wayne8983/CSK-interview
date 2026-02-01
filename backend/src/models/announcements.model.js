@@ -9,24 +9,21 @@ import { announcements } from '../store/announcments.store.js';
  */
 
 export const createAnnouncement = (title, message) => {
-  const announcement = {
-    id: Date.now().toString(),
-    title,
-    message,
-    createdAt: new Date().toISOString(),
-  };
-  announcements.push(announcement);
-  return announcement;
+  //your code
+
 };
 
-export const getAnnouncements = () => announcements;
+export const getAnnouncements = () => {
+  //your code
 
-export const getAnnouncementById = (id) => announcements.find(a => a.id === id);
+}
+
+export const getAnnouncementById = (id) => {
+  //your code
+
+}
 
 export const deleteAnnouncement = (id) => {
-  const index = announcements.findIndex(a => a.id === id);
-  if (index > -1) {
-    return announcements.splice(index, 1)[0];
-  }
-  return null;
+  //your code
+  
 };
