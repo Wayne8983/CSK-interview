@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+### Create a new announcement
+POST {{baseUrl}}/announcements
+Content-Type: {{contentType}}
+
+{
+  "title": "Welcome",
+  "message": "This is the first announcement"
+}
+
+### Get all announcements
+GET {{baseUrl}}/announcements
+
+### Get announcement by ID (replace ID with actual ID from create response)
+GET {{baseUrl}}/announcements/1707000000000
+
+### Delete announcement by ID (replace ID with actual ID)
+DELETE {{baseUrl}}/announcements/1707000000000
+
+### Create another announcement
+POST {{baseUrl}}/announcements
+Content-Type: {{contentType}}
+
+{
+  "title": "Update",
+  "message": "Here is an important update"
+}
