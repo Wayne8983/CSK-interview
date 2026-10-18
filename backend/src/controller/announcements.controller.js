@@ -48,7 +48,7 @@ export const getAnnouncement = (req, res) => {
 
 export const deleteAnnouncement = (req, res) => {
   try {
-    const { id } = req.params;
+    const   id  = Number(req.params.id);
     const announcement = removeAnnouncement(id);
 
     if (!announcement) {

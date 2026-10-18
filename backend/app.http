@@ -14,10 +14,10 @@ Content-Type: {{contentType}}
 GET {{baseUrl}}/announcements
 
 ### Get announcement by ID (replace ID with actual ID from create response)
-GET {{baseUrl}}/announcements/1707000000000
+GET {{baseUrl}}/announcements/1
 
 ### Delete announcement by ID (replace ID with actual ID)
-DELETE {{baseUrl}}/announcements/1707000000000
+DELETE {{baseUrl}}/announcements/1
 
 ### Create another announcement
 POST {{baseUrl}}/announcements
